@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tugas3 3Dcalculator</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+		<p align="center">TUGAS 3</p>
+	</header>
+	<div class="main">
+		<div class="container" align="center">
+			<div class="judul">Coba Kalkulator 3D</div>
+			<h1>Selamat <span id="waktu"></span>, <span id="nama"></span></h1>
+			<p>Menghitung volume dan luas permukaan dari silinder, kerucut, dan bola.</p>
+			<br>
+			<div class="Silinder" align="center">
+				<h1>Silinder</h1>
+				<p>Masukkan jari-jari silinder</p>
+				<input type="text" name="jari2" id="thisJ" value="" placeholder="Jari-Jari (satuan meter)"><br><br>
+				<p>Masukkan tinggi silinder</p>
+				<input type="text" name="tinggi" id="thisTslider" value="" placeholder="Tinggi (satuan meter)"><br><br>
+				<div class="hitung">
+					<span class="button message" onclick="hasilSilinder()">Hitung!</span>
+				</div>
+				<!-- <button class="hitung-silinder" onclick="hasilSilinder()">Hitung!</button> -->
+				<br><br>
+				<h2>Hasil Perhitungan</h2>
+				<p>Luas Permukaan: <span id="lp-silinder"></span> m<sup>2</sup></p><br>
+				<p>Volume: <span id="vm-silinder"></span> m<sup>3</sup></p>
+			</div>
+			<div class="Kerucut" align="center">
+				<h1>Kerucut</h1>
+				<p>Masukkan jari-jari Kerucut</p>
+				<input type="text" name="jari2" id="thisJkerucut" value=""
+					placeholder="Jari-Jari (satuan meter)"><br><br>
+				<p>Masukkan garis pelukis kerucut</p>
+				<input type="text" name="gp" id="thisJgp" value="" placeholder="Garis Pelukis (satuan meter)"><br><br>
+				<p>Masukkan tinggi kerucut</p>
+				<input type="text" name="tinggi" id="thisTkerucut" value="" placeholder="Tinggi (satuan meter)"><br><br>
+				<div class="hitung">
+					<span class="button message" onclick="hasilKerucut()">Hitung!</span>
+				</div>
+				<!-- <button class="hitung-silinder" onclick="hasilSilinder()">Hitung!</button> -->
+				<br><br>
+				<h2>Hasil Perhitungan</h2>
+				<p>Luas Permukaan: <span id="lp-kerucut"></span> m<sup>2</sup></p><br>
+				<p>Volume: <span id="vm-kerucut"></span> m<sup>3</sup></p>
+			</div>
+			<div class="Bola" align="center">
+				<h1>Bola</h1>
+				<p>Masukkan jari-jari Bola</p>
+				<input type="text" name="jari2" id="thisJbola" value="" placeholder="Jari-Jari (satuan meter)"><br><br>
+				<div class="hitung">
+					<span class="button message" onclick="hasilBola()">Hitung!</span>
+				</div>
+				<!-- <button class="hitung-silinder" onclick="hasilSilinder()">Hitung!</button> -->
+				<br><br>
+				<h2>Hasil Perhitungan</h2>
+				<p>Luas Permukaan: <span id="lp-bola"></span> m<sup>2</sup></p><br>
+				<p>Volume: <span id="vm-bola"></span> m<sup>3</sup></p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<footer>
+		<div class="header-left">
+			<p>Sendy Dwi Kurniawan - 1402019096</p>
+		</div>
+		<div class="icon-f">
+			<p>Instagram</p>
+			<a href="https://www.instagram.com/sendoykiran/" target="_blank"><img src="instagram.png"></a>
+			<p>Github</p>
+			<a href="https://github.com/" target="_blank"><img src="github.png"></a>
+			<p>Facebook</p>
+			<a href="https://www.facebook.com/" target="_blank"><img src="facebook.png"></a>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>
